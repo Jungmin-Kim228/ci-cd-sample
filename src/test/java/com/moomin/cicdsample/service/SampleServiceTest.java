@@ -17,8 +17,8 @@ class SampleServiceTest {
         assertEquals(1, service.getNum());
     }
 
-    // @Test
-    // void serviceTest2() {
-    //     assertEquals(2, service.plusNum());
-    // }
+    @Test
+    void serviceTest2() {
+        assertEquals(2, service.plusNum());
+    }
 }
