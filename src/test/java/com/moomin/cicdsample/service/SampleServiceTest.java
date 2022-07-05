@@ -2,18 +2,19 @@ package com.moomin.cicdsample.service;
 
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-@RequiredArgsConstructor
-class testServiceTest {
+class SampleServiceTest {
 
-    private final testService service;
+    @Autowired
+    private SampleService service;
 
     @Test
     void serviceTest() {
-        assertEquals(service.getNum(), 1);
+        assertEquals(1, service.getNum());
     }
 }

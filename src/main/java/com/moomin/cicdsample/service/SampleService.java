@@ -1,6 +1,9 @@
 package com.moomin.cicdsample.service;
 
-public class testService {
+import org.springframework.stereotype.Service;
+
+@Service
+public class SampleService {
     private int num = 1;
 
     int plusNum() {
