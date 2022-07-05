@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CiCdSampleApplication {
-
+    // github action auto build test
     public static void main(String[] args) {
         SpringApplication.run(CiCdSampleApplication.class, args);
     }
