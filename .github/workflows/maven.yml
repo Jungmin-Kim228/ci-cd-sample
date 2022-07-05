@@ -28,7 +28,7 @@ jobs:
     - name : Run SonarQube
       run : mvn sonar:sonar -Dsonar.projectKey=github-action-moomin -Dsonar.host.url=${{secrets.SONAR_HOST}} -Dsonar.login=${{secrets.SONAR_TOKEN}}
 
-    - name : Depoly
+    - name : Deploy
       uses: appleboy/scp-action@master
       with:
           host: ${{ secrets.SSH_IP }}
